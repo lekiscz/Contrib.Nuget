@@ -48,7 +48,7 @@ namespace Baseclass.Contrib.Nuget.Output.Build
             foreach (var dependency in dependencies)
                 if (!IsTransativeDependency(dependency))
                     currentDirectDependency = dependency;
-                else if (dependency.Contains("Baseclass.Contrib.Nuget.Output"))
+                else if (dependency.Contains("Baseclass.Contrib.Nuget.Output-LekisModV2"))
                 {
                     var trimmedDependendency = currentDirectDependency.Trim();
                     yield return trimmedDependendency.Substring(0, trimmedDependendency.IndexOf(" "));

@@ -5,7 +5,7 @@
   <!-- Build targets                                                -->
   <!-- ============================================================ -->
   <!-- 
-  Is run once after build, checks if the project's nuget package's .nuspec depends on Baseclass.Contrib.Nuget.Output and copies everything which is in the
+  Is run once after build, checks if the project's nuget package's .nuspec depends on Baseclass.Contrib.Nuget.Output-LekisModV2 and copies everything which is in the
   output folder to the builds OutDir.
   -->
   <Target Name="CopyToOutput" AfterTargets="Compile" DependsOnTargets="CollectNugetOutputFiles">
@@ -78,7 +78,7 @@
   </Target>
 
   <!--
-  Filter the NugetPackages list to only include nuget packages referenced in the PackageConfigs list which depend on Baseclass.Contrib.Nuget.Output
+  Filter the NugetPackages list to only include nuget packages referenced in the PackageConfigs list which depend on Baseclass.Contrib.Nuget.Output-LekisModV2
   -->
-  <UsingTask TaskName="PackageRetrievalTask" AssemblyFile="$(MSBuildThisFileDirectory)\Baseclass.Contrib.Nuget.Output.Build.dll" TaskFactory="TaskHostFactory" />
+  <UsingTask TaskName="PackageRetrievalTask" AssemblyFile="$(MSBuildThisFileDirectory)\Baseclass.Contrib.Nuget.Output-LekisModV2.Build.dll" TaskFactory="TaskHostFactory" />
 </Project>

@@ -59,7 +59,7 @@ namespace Baseclass.Contrib.Nuget.Output.Build
                     .ToArray(); // list of nuget packages used by the project
 
             var result = new List<ITaskItem>();
-            // list of nuget packages used by the project that depends on Baseclass.Contrib.Nuget.Output
+            // list of nuget packages used by the project that depends on Baseclass.Contrib.Nuget.Output-LekisModV2
             foreach (var nugetPackage in usedNugetPackages)
             {
                 var path = nugetPackage.GetMetadata("Fullpath");
@@ -113,7 +113,7 @@ namespace Baseclass.Contrib.Nuget.Output.Build
                         if (dep.Attributes == null)
                             continue;
                         var id = dep.Attributes.GetNamedItem("id").Value;
-                        if ("Baseclass.Contrib.Nuget.Output".Equals(id))
+                        if ("Baseclass.Contrib.Nuget.Output-LekisModV2".Equals(id))
                         {
                             result.Add(nugetPackage);
                             break;
@@ -254,7 +254,7 @@ namespace Baseclass.Contrib.Nuget.Output.Build
                 if (dep.Attributes == null)
                     continue;
                 var id = dep.Attributes.GetNamedItem(idAttributeName).Value;
-                if ("Baseclass.Contrib.Nuget.Output".Equals(id))
+                if ("Baseclass.Contrib.Nuget.Output-LekisModV2".Equals(id))
                     continue;
                 var version = dep.Attributes.GetNamedItem(versionAttributeName)?.Value
                               ?? dep[versionAttributeName]?.InnerText;

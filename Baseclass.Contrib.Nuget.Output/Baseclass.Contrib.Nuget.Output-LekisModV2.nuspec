@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/01/nuspec.xsd">
     <metadata minClientVersion="2.5">
-        <id>Baseclass.Contrib.Nuget.Output-LekisMod</id>
+        <id>Baseclass.Contrib.Nuget.Output-LekisModV2</id>
         <version>$version$</version>
-        <title>Baseclass.Contrib.Nuget.Output-LekisMod</title>
+        <title>Baseclass.Contrib.Nuget.Output-LekisModV2</title>
         <authors>Daniel Romero</authors>
         <owners>baseclass</owners>
         <licenseUrl>http://www.baseclass.ch/documents/MITLicense.txt</licenseUrl>
@@ -15,7 +15,7 @@
         <tags>Nuget Targets Copy Output build package convention</tags>
     </metadata>
     <files>
-        <file src="build\net40\Baseclass.Contrib.Nuget.Output.targets" target="build\Baseclass.Contrib.Nuget-LekisMod.Output.targets" />
-        <file src="build\net40\Baseclass.Contrib.Nuget.Output.Build.dll" target="build\Baseclass.Contrib.Nuget-LekisMod.Output.Build.dll" />
+        <file src="build\net40\Baseclass.Contrib.Nuget.Output-LekisModV2.targets" target="build\Baseclass.Contrib.Nuget.Output-LekisModV2.targets" />
+        <file src="build\net40\Baseclass.Contrib.Nuget.Output-LekisModV2.Build.dll" target="build\Baseclass.Contrib.Nuget.Output-LekisModV2.Build.dll" />
     </files>
 </package>
